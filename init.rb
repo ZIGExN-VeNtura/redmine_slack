@@ -11,7 +11,7 @@ Redmine::Plugin.register :redmine_slack do
 	description 'Slack chat integration'
 	version '0.2'
 
-	requires_redmine :version_or_higher => '0.8.0'
+	requires_redmine :version_or_higher => '0.8.1'
 
 	settings \
 		:default => {

@@ -224,6 +224,8 @@ module RedmineSlack
         key = detail.prop_key.to_s.sub("_id", "")
         if key == "parent"
           title = I18n.t "field_#{key}_issue"
+        elsif key == "child"
+          title = I18n.t :label_subtask
         else
           title = I18n.t "field_#{key}"
         end
